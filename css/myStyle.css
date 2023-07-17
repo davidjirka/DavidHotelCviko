@@ -1,3 +1,6 @@
+* {
+  font-size: 14px;
+}
 .logo img {
   width: 50px;
 }
@@ -43,9 +46,11 @@
 }
 .font_prvni {
   font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 .font_druhy {
   font-family: fantasy;
+  font-size: 20px;
 }
 .card {
   background-color: white;
@@ -61,4 +66,22 @@
 }
 nav {
   background-color: white;
+}
+.nav-item a {
+  transition: 0.3s;
+}
+.nav-item a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 0, 98);
+  transition: 0.3s;
+}
+.nav-item a:hover {
+  color: rgb(255, 0, 98);
+  transition: 0.3s;
+}
+.nav-item a:hover::after {
+  width: 100%;
 }
